@@ -1,3 +1,4 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,7 @@
         <div class="row">
           
           <div class="column">
-            <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxA4oXBnH2Pki9Xwc6teN1EpDDDt01YoPPexqjDopAv6UFUeQUMczMH6X0oWhb0dxlZeA/exec">
+            <form id="submit-form" action="">
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="name" placeholder="Your name..">
               <label for="lname">Email</label>
@@ -41,7 +42,7 @@
         $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"",
+                url:"https://script.google.com/macros/s/AKfycbxA4oXBnH2Pki9Xwc6teN1EpDDDt01YoPPexqjDopAv6UFUeQUMczMH6X0oWhb0dxlZeA/exec ",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
